@@ -1,0 +1,32 @@
+SÓNG — LỌC NHẠC SPOTIFY
+
+MACBOOK CHIP M (macOS 13+)
+Giải nén Song-macOS-AppleSilicon.zip, kéo Sóng.app vào Applications và mở.
+App sẽ mở bản web trong trình duyệt mặc định. Không cần Node hay chạy lệnh.
+Nếu macOS chặn vì app chưa notarize: System Settings > Privacy & Security > Open Anyway.
+
+ANDROID (8.0+)
+Mở Song-Android.apk. Cho phép cài từ nguồn đã tải khi Android hỏi.
+Đây là APK ký cục bộ, chưa phát hành trên Google Play.
+
+SPOTIFY — THAO TÁC MỘT LẦN
+Vào https://developer.spotify.com/dashboard, chọn app của bạn > Settings.
+Thêm Redirect URI này và Save:
+http://127.0.0.1:43821/callback
+Client ID công khai của bạn đã gắn sẵn; không cần Client Secret.
+Sau đó mở Sóng và bấm Đăng nhập Spotify trên trang chính thức.
+Nếu báo không đủ quyền, kiểm tra quyền tài khoản/Development Mode trong Dashboard.
+
+SẮP XẾP
+1. Đồng bộ Liked Songs.
+2. Bấm Tự động sắp xếp > thể loại, ngôn ngữ, hoặc thể loại + ngôn ngữ.
+3. Gợi ý nhanh không cần key; AI tuỳ chọn dùng OpenAI API key nhập trong app.
+   OpenAI API có phí riêng; gói ChatGPT không thay API key. Key chỉ giữ trong bộ nhớ màn hình.
+4. Xem lại nhãn suy đoán/nhóm Chưa rõ. Chọn nhiều bài để chỉnh nhãn nếu cần.
+5. Vào Nhóm theo gu > Tạo nhiều playlist, xem và chọn nhóm rồi xác nhận.
+   Playlist riêng tư được tạo trực tiếp trên Spotify; bài vẫn nằm trong Liked Songs.
+6. Nhập file JSON lịch sử nghe Spotify để lọc nghe nhiều/bình thường/ít nghe và lần nghe cuối.
+   Spotify Web API không có tổng lượt nghe. Chưa ghi nhận không có nghĩa là chưa từng nghe.
+7. Chọn các bài muốn dọn rồi Bỏ thích và xác nhận danh sách; Spotify sẽ cập nhật thật.
+
+Đã kiểm thử trong cloud với Spotify/OpenAI mô phỏng. Chưa chạy trực tiếp trên máy Mac/Android hoặc đăng nhập tài khoản của bạn.
